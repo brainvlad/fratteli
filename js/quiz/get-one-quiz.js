@@ -96,7 +96,6 @@ const renderTest = async () => {
         }); 
 
         const result = await res.json();
-        console.log(result)
         const resultDiv = document.querySelector('#result')
         resultDiv.innerHTML = ''
         resultDiv.innerHTML = `
