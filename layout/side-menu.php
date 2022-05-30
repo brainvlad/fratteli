@@ -9,6 +9,7 @@
       <a href="../web/group.php" class="nav__item">Мои группы</a>
       <a href="../web/words.php" class="nav__item">Словарь</a>
       <a href="../web/quiz-list.php" class="nav__item">Тесты</a>
+      <a href="../web/library.php" class="nav__item">Библиотека</a>
     </nav>
   </div>
   <div class="nav__bottom">

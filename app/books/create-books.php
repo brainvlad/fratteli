@@ -13,7 +13,7 @@ try {
     }
 
 
-    $name = $_POST["Name"];
+    $name = $_POST["name"];
     $description = $_POST["description"];
 
     $path = 'uploads/' . time() . $_FILES['book_picture']['name'];
