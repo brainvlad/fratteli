@@ -84,12 +84,31 @@ const chekValidation = (formData) => {
   }
 
   return flag
-} 
+}
+
+const nameData = document.getElementById("name");
+const emailData = document.getElementById("email");
+const passwordData = document.getElementById("password");
+const passwordRepeatData = document.getElementById("name");
+
+const inputStudentRole = document.getElementById("inputStudent");
+const inputTeacherRole = document.getElementById("inputTeacher");
+
 
 const signUp = () => {
   $(document).ready(function() {
     $("#signEnd").submit(function(event) {
         event.preventDefault();
+
+
+      const sendData = {
+        name: nameData.value,
+        email: emailData.value,
+        password: passwordData.value === passwordRepeatData.value ? passwordData : null,
+        role: inputStudentRole.checked ? inputStudentRole.value : inputTeacherRole.value,
+      };
+
+        console.log(sendData);
 
         $.ajax({
           type: "post",
@@ -100,7 +119,7 @@ const signUp = () => {
           processData: false,
           success: function(data) {
               if (data) {
-                  window.location.href = "/web/home.php"
+                  window.location.href = "/web/reg-test.php"
               }
           }
       })
@@ -113,5 +132,5 @@ viewPassword()
 changeBg()
 signForm('signUp')
 signForm('signRole')
-signForm('signLevel')
+//signForm('signLevel')
 signUp()
