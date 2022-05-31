@@ -34,6 +34,17 @@
   border-radius: 16px;
   position: relative;
 }
+.popup img {
+  max-width: 100%;
+}
+.title__text {
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 36px;
+text-align: center;
+}
 
 .popup__close {
   position: absolute;

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/css/components/popup.css">
+  <link rel="stylesheet" href="../styles/css/components/navbar.css">
+  <link rel="stylesheet" href="../styles/css/profile-settings/profile-settings.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <nav class="nav">
+      <img class="logo" src="/assets/img/logo.svg" alt="">
+      <ul class="nav__list">
+        <li class="nav__list__item">
+          <a class="nav__list__link" href="#">
+            Мое расписание
+          </a>
+        </li>
+        <li class="nav__list__item">
+          <a class="nav__list__link" href="#">
+            Мои группы
+          </a>
+        </li>
+        <li class="nav__list__item">
+          <a class="nav__list__link" href="#">
+            Стикеры
+          </a>
+        </li>
+        <li class="nav__list__item active__item">
+          <a class="nav__list__link" href="#">
+            Тесты
+          </a>
+        </li>
+        <li class="nav__list__item">
+          <a class="nav__list__link" href="#">
+            Библиотека
+          </a>
+        </li>
+      </ul>
+      <ul class="nav__list--bottom">
+        <li class="nav__list--bottom__item">
+          <p class="nav__list--bottom__link">Настройки</p>
+        </li>
+        <li class="nav__list--bottom__item">
+          <p class="nav__list--bottom__link exit__btn">Выход</p>
+        </li>
+
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="container">
+        <div class="main__header">
+          <div class="main__header__title">
+            <h1>Имя пользователя</h1>
+            <div class="test__level">
+              A1
+            </div>
+          </div>
+          <div class="main__header__delete">
+            <p class="delete__text">
+              Удалить профиль
+            </p>
+            <div class="delete__btn">
+              <img src="/assets/icons/cross.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <section class="main__content pb">
+          <h2>Сменить имя пользователя</h2>
+          <input class="input__style" type="text" placeholder="Введите новое имя пользователя">
+          <button class="btn">Изменить</button>
+        </section>
+        <section class="main__content">
+          <h2>Оставить отзыв</h2>
+          <textarea class="input__style textarea__style"  placeholder="Введите текст отзыва"></textarea>
+          
+          <button class="btn">Отправить</button>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="../js/popup.js"></script>
+</body>
+
+</html>
