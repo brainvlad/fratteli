@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  src: url("/assets/fonts/ProximaNova-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  src: url("/assets/fonts/ProximaNova-Light.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  src: url("/assets/fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+
+.main {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100vh;
+
+
+  .logo {
+    padding-bottom: 44px;
+  }
+
+  .content {
+    max-width: 50%;
+    overflow: hidden;
+    position: relative;
+
+    &--left {
+      padding: 145px 110px 160px 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (max-width: 750px) {
+        max-width: 100%;
+      }
+
+
+        .btn {
+          width: 100%;
+          background: #97CD92;
+          border-radius: 16px;
+          font-family: 'Proxima Nova';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 20px;
+          color: #fff;
+          border: 0;
+          padding: 20px 0;
+        }
+
+        h1 {
+          font-family: 'Proxima Nova';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 36px;
+          text-align: center;
+          padding-bottom: 16px;
+        }
+
+      }
+
+      &__text {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 300px;
+        text-align: center;
+        flex: 1;
+      }
+
+      &--right {
+        background: #4D62ED;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 750px) {
+          display: none;
+        }
+
+        .block {
+          flex: 1;
+        }
+
+      }
+
+      &__background {
+        position: absolute;
+        z-index: 1;
+        top: -40%;
+        left: 25%;
+
+      }
+
+      &__img {
+        z-index: 10;
+      }
+    }
+  }

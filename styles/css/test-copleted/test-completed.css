@@ -1,0 +1,233 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  src: url("/assets/fonts/ProximaNova-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  src: url("/assets/fonts/ProximaNova-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  src: url("/assets/fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 64px 60px 80px;
+}
+
+.nav .logo {
+  padding-bottom: 120px;
+}
+
+.nav__list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+}
+
+.nav__list__item {
+  margin-bottom: 44px;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  opacity: 0.6;
+}
+
+.nav__list--bottom__item {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2E3134 !important;
+  opacity: 0.6;
+  margin-bottom: 24px;
+}
+
+.nav__list--bottom__link {
+  text-decoration: none;
+}
+
+.nav__list__link {
+  text-decoration: none;
+  color: #2E3134;
+}
+
+.main {
+  padding-top: 64px;
+  padding-left: 60px;
+}
+
+.main__bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+}
+
+.main .test__block__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .test__block__title img {
+  margin-left: 16px;
+  width: 42px;
+  height: 42px;
+}
+
+.main .test__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  padding-bottom: 53px;
+}
+
+.main .test__info__test {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2E3134;
+}
+
+.main .test__main__mark {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  color: #97CD92;
+  padding-bottom: 8px;
+}
+
+.main .test__main__mark--not-passed {
+  color: #F26363;
+}
+
+.main .btn {
+  background: #97CD92;
+  border-radius: 16px;
+  width: 100%;
+  border: 0;
+  padding: 20px 0;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 60px;
+  margin-bottom: 44px;
+}
+
+.main h1 {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  color: #2E3134;
+  padding-bottom: 16px;
+}
+
+.link--clear {
+  max-width: 150px;
+  opacity: 1;
+  color: #4D62ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+.link--clear:hover img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translate(40%);
+          transform: translate(40%);
+}
+
+.active__item {
+  opacity: 1;
+  border-left: 5px solid #97CD92;
+  padding-left: 10px;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav .logo {
+    max-width: 70%;
+    padding-bottom: 30px;
+  }
+  .nav__list {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .nav__list__item {
+    margin-bottom: 30px;
+  }
+  .nav__list--bottom__item {
+    text-align: center;
+  }
+  main {
+    padding: 0 24px;
+  }
+}
+/*# sourceMappingURL=test-completed.css.map */

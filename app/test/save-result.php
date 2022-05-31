@@ -14,6 +14,7 @@ try {
 
     $answer_ids = $req['answer_ids'];
     $test_id = $req["test_id"];
+    $regTest  = $req["regTest"];
 
     if (count($answer_ids) == 0) {
         throw new Exception("Вы не ответили ни на один вопрос! Пройдите тест позже:)");
@@ -72,14 +73,12 @@ try {
     $selectResultsByTestIdAndStudentId = "SELECT `exam_id` FROM `exam` WHERE `student_id` = $student_id AND `test_id` = $test_id";
     $exam_id = (int)$db->query($selectResultsByTestIdAndStudentId)->fetch_assoc()["exam_id"];
 
-    if (!$exam_id) {
+    if (!$exam_id && !$regTest) {
         $insertTestResult = "INSERT INTO `exam`
         (`exam_id`, `student_id`, `test_id`, `exam_rating`) VALUES
         (NULL, '$student_id', '$test_id', '$rating')";
 
-echo $insertTestResult;
-
-        $db->query($insertTestResult);    
+        $db->query($insertTestResult);
     } else {
         $updateTestResult = "UPDATE `exam` SET `exam_rating` = $rating";
 

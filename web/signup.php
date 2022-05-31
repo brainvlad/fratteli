@@ -31,21 +31,21 @@ $page_title = "Регистрация";
       <form class="form form-sign" action="" id="signUp">
         <div class="form__fields">
           <div class="form__item">
-            <input class="form__input" name="email" type="email" placeholder="Email" required>
+            <input class="form__input" name="email" id="email" type="email" placeholder="Email" required>
           </div>
           <div class="form__item">
-            <input class="form__input" name="name" type="text" placeholder="Имя пользователя" required>
+            <input class="form__input" name="name" id="name" type="text" placeholder="Имя пользователя" required>
           </div>
           <div class="form__item">
-            <input class="form__input" name="password" type="password" placeholder="Пароль" required>
+            <input class="form__input" name="password" id="password" type="password" placeholder="Пароль" required>
             <i id="viewField" class="form__item-icon ci-hide"></i>
           </div>
           <div class="form__item">
-            <input class="form__input" name="passwordRepeat" type="password" placeholder="Пароль" required>
+            <input class="form__input" name="passwordRepeat" id="passwordRepeat" type="password" placeholder="Пароль" required>
           </div>
         </div>
         <button class="form__btn">
-          Войти
+          Зарегистрироваться
         </button>
       </form>
     </section>
@@ -92,37 +92,37 @@ $page_title = "Регистрация";
       </form>
     </section>
 
-    <section class="sign__container" data-signLevel>
-      <header class="sign__header">
-        <header class="sign__logo">
-          <img class="sign__logo-img" src="/assets/img/logo.png" alt="Fratelli">
-        </header>
-        <div class="sign__header-title">
-          Ваш уровень итальянского?
-        </div>
-        <div class="sign__subtitle">
-          <span>Если вы не знаете свой уровень - пройдите тест на знание</span>
-          <span>итальянского в разделе <a class="sign__link" href="/web/signin.html">Тесты</a></span>
-        </div>
-      </header>
-      <form class="form form-sign" action="" id="signLevel">
-        <div class="form__fields">
-          <div class="form__item">
-            <select class="form__input" name="level" placeholder="Выберите ваш уровень" required>
-              <option value="A1">A1</option>
-              <option value="A2">A2</option>
-              <option value="B1">B1</option>
-              <option value="B2">B2</option>
-              <option value="C1">C1</option>
-              <option value="C2">C2</option>
-            </select>
-          </div>
-        </div>
-        <button class="form__btn">
-          Далее
-        </button>
-      </form>
-    </section>
+<!--    <section class="sign__container" data-signLevel>-->
+<!--      <header class="sign__header">-->
+<!--        <header class="sign__logo">-->
+<!--          <img class="sign__logo-img" src="/assets/img/logo.png" alt="Fratelli">-->
+<!--        </header>-->
+<!--        <div class="sign__header-title">-->
+<!--          Ваш уровень итальянского?-->
+<!--        </div>-->
+<!--        <div class="sign__subtitle">-->
+<!--          <span>Если вы не знаете свой уровень - пройдите тест на знание</span>-->
+<!--          <span>итальянского в разделе <a class="sign__link" href="/web/signin.html">Тесты</a></span>-->
+<!--        </div>-->
+<!--      </header>-->
+<!--      <form class="form form-sign" action="" id="signLevel">-->
+<!--        <div class="form__fields">-->
+<!--          <div class="form__item">-->
+<!--            <select class="form__input" name="level" placeholder="Выберите ваш уровень" required>-->
+<!--              <option value="A1">A1</option>-->
+<!--              <option value="A2">A2</option>-->
+<!--              <option value="B1">B1</option>-->
+<!--              <option value="B2">B2</option>-->
+<!--              <option value="C1">C1</option>-->
+<!--              <option value="C2">C2</option>-->
+<!--            </select>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <button class="form__btn">-->
+<!--          Далее-->
+<!--        </button>-->
+<!--      </form>-->
+<!--    </section>-->
 
     <section class="sign__container" data-signEnd>
       <header class="sign__header">

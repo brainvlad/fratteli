@@ -15,50 +15,5 @@
   <link rel="stylesheet" href="/styles/css/all.css">
   <link rel="stylesheet" href="/styles/css/slick.css">
   <link rel="stylesheet" href="/styles/css/slick-theme.css">
-  <style>
-    .test_level {
-      background: #41BBFF;
-      border-radius: 12px;
-      display: inline-block;
-      padding: 15px;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 26px;
-      color: #fff;
-      margin: 20px 0;
-    }
 
-    .answers-container {
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-    }
-    .answer-item {
-      width: 300px;
-    }
-    .answer-item input[type="text"] {
-      width: 100px;
-    }
-    .questions-desc {
-      border: 2px solid #ececec;
-      border-radius: 10px;
-      padding: 5px;
-    }
-    #testContainer{
-      width: 500px;
-    }
-
-    input[type="text"] {
-      width: 200px;
-      border: 2px solid #cccccc;
-      outline: none;
-      border-radius: 5px;
-      padding: 3px;
-    }
-
-    input[type="text"]:hover {
-      border: 2px solid #454545;
-    }
-  </style>
 </head>

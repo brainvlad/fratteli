@@ -1,0 +1,108 @@
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.title__text {
+  padding-bottom: 16px;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  color: #2E3134;
+}
+
+.selected {
+  margin-bottom: 24px;
+}
+
+.selected h2 {
+  padding: 0;
+}
+
+.selected__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selected__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+}
+
+.selected__cards__item {
+  padding: 24px 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selected__cards__item .like__btn {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  border: 0;
+  background-color: #FAF8EE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.completed {
+  padding: 186px 12px 60px 0;
+}
+
+.completed .title__text {
+  padding-bottom: 8px;
+}
+
+.completed__cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.completed__cards__item img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 900px) {
+  .selected__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=stickers.css.map */

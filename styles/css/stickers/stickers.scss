@@ -1,0 +1,81 @@
+.main {
+  flex: 1;
+}
+
+.title__text {
+  padding-bottom: 16px;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  color: #2E3134;
+}
+
+.selected {
+  margin-bottom: 24px;
+
+
+  h2 {
+    padding: 0;
+  }
+
+  &__title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    &__item {
+      padding: 24px 47px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .like__btn {
+        margin-top: 20px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 40px;
+        border: 0;
+        background-color: #FAF8EE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.completed {
+  padding: 186px 12px 60px 0;
+
+  .title__text {
+    padding-bottom: 8px;
+  } 
+  &__cards {
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media(max-width:900px) {
+  .selected__cards {
+    justify-content: center;
+  }
+}
